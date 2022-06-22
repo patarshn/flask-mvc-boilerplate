@@ -1,0 +1,22 @@
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>phone</th>
+        <th>region</th>
+      </tr>
+    {% for user in data.users %}
+        <tr>
+          <td>{{user.id}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.phone}}</td>
+          <td>{{user.region}}</td>
+        </tr>
+    {%endfor%}
+</table>
+
+<br>
+<form action="{{url_for('UserBlueprint.store')}}" method="POST">
+    <input type="text" name="name" value="PATAR">
+    <input type="submit" value="SUBMIT">
+</form>

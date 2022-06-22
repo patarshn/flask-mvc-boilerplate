@@ -1,0 +1,15 @@
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>phone</th>
+        <th>region</th>
+      </tr>
+    {% set user = data.user %}
+        <tr>
+          <td>{{user.id}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.phone}}</td>
+          <td>{{user.region}}</td>
+        </tr>
+</table>
